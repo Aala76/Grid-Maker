@@ -124,5 +124,6 @@ function deleteTab() {
     tab.innerHTML = "";
     numRows = 0;
     numCols = 0;
+    colorSelected = null;
 }
 
