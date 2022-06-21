@@ -3,6 +3,16 @@ let numRows = 0;
 let numCols = 0;
 let colorSelected;
 
+function setCellColors() {
+    let cell = document.querySelectorAll("td");
+    for (var i = 0; i < cell.length; i++) {
+        cell[i].onclick = function(){
+            this.style.backgroundColor = colorSelected;
+        }
+    }
+}
+
+
 // Add a row
 function addR() {
     let table = document.getElementById("grid");
