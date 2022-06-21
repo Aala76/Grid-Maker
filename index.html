@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Buttons -->
+    <button class="button", onclick="addR()">Add Row</button>
+    <button class="button", onclick="addC()">Add Col</button>
+    <button class="button", onclick="removeR()">Remove Row</button>
+    <button class="button", onclick="removeC()">Remove Col</button>
+    <button class="button", onclick="fillU()">Fill All Uncolored</button>
+    <button class="button", onclick="fillAll()">Fill All</button>
+    <button class="button", onclick="clearAll()">Clear</button>
+    <select  onchange="selectColor()" id="selectedColorId">
+        <option value="SELECT">SELECT</option>
+        <option value="Crimson">Red</option>
+        <option value="MediumPurple">Purple</option>
+        <option value="SteelBlue">Blue</option>
+        <option value="DarkSeaGreen">Green</option>
+        <option value="LemonChiffon">Yellow</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+    <!-- Grid Table -->
+
+    <table id="grid">
+    </table>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
